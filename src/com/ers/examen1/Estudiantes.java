@@ -14,13 +14,18 @@ public class Estudiantes extends Usuarios{
 		this.semestre = semestre;
 	}
 	
-	public void Prestamo(string tituloLib){
+	public void Prestamo(String tituloLib){
 		if(this.getCantPrestamos()<=3) {
-			System.out.println("El libro: "+tituloLib+"Ha sido reservado correctamente");
-			
+			this.setCantPrestamos(getCantPrestamos()+1);
+			System.out.println("El libro: "+tituloLib+"Ha sido reservado correctamente, tienes una semana para devolverlo");
+			System.out.println("Usted tiene "+this.getCantPrestamos()+"prestamos pendientes");
 		}
-		
-		
 	}
+	
+	
+	public void CambioCarrera(String nuevaCarrera) {
+		this.carrera = nuevaCarrera;
+	}
+	
 
 }
