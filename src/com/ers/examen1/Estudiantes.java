@@ -17,7 +17,7 @@ public class Estudiantes extends Usuarios{
 	public void Prestamo(String tituloLib){
 		if(this.getCantPrestamos()<=3) {
 			this.setCantPrestamos(getCantPrestamos()+1);
-			System.out.println("El libro: "+tituloLib+"Ha sido reservado correctamente, tienes una semana para devolverlo");
+			System.out.println("El libro: "+tituloLib+" Ha sido reservado correctamente, tienes una semana para devolverlo");
 			System.out.println("Usted tiene "+this.getCantPrestamos()+"prestamos pendientes");
 		}
 	}
@@ -26,6 +26,22 @@ public class Estudiantes extends Usuarios{
 	public void CambioCarrera(String nuevaCarrera) {
 		this.carrera = nuevaCarrera;
 	}
-	
 
+	public String getCarrera() {
+		return carrera;
+	}
+
+	public String getPlan() {
+		return plan;
+	}
+
+	public String getCorreo() {
+		return correo;
+	}
+
+	public double getSemestre() {
+		return semestre;
+	}
+	
+	
 }

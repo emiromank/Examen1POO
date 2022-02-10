@@ -25,8 +25,33 @@ public class Biblioteca {
 		this.profesores[numProf]=e;
 		this.numProf++;
 	}
+
+
+	public String getNombre() {
+		return nombre;
+	}
+
+
+	public String getDireccion() {
+		return direccion;
+	}
 	
+	public void imprimirUsuarios() {
+		int i=0, j=0;
+		
+		for(i=0;i<this.numEs;i++) {
+			System.out.println("Alumno #"+estudiantes[i].getId()+
+								"\nNombre: "+estudiantes[i].getNombre()+
+								"\nCarrera: "+estudiantes[i].getCarrera()+
+								"\nPlan: "+estudiantes[i].getPlan()+
+								"\nSemestre: "+estudiantes[i].getSemestre()
+					);
+		}
+			
+		for(j=0;j<this.numProf;j++) {
+			System.out.println("Profesor # "+profesores[j].getId());
+			}
+		}
+	}
 	
-	
-}
 

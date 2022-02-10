@@ -17,7 +17,7 @@ public class Profesores extends Usuarios{
 	public void Prestamo(String tituloLib){
 		if(this.getCantPrestamos()<=5) {
 			this.setCantPrestamos(getCantPrestamos()+1);
-			System.out.println("El libro: "+tituloLib+"Ha sido reservado correctamente, tienes 2 semanas para devolverlo");
+			System.out.println("El libro: "+tituloLib+" Ha sido reservado correctamente, tienes 2 semanas para devolverlo");
 			System.out.println("Usted tiene "+this.getCantPrestamos()+"prestamos pendientes");
 		}
 	}
