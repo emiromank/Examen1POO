@@ -25,6 +25,24 @@ public class Profesores extends Usuarios{
 	public void Ascenso(String nuevoPuesto) {
 		this.tipoProfesor = nuevoPuesto;
 	}
+
+	public double getHorasPorSemana() {
+		return horasPorSemana;
+	}
+
+	public String getMateriaImpartida() {
+		return materiaImpartida;
+	}
+
+	public String getTipoProfesor() {
+		return tipoProfesor;
+	}
+
+	public double getExtension() {
+		return extension;
+	}
+	
+	
 }
 
 

@@ -9,12 +9,6 @@ public class Main {
 		bib.agregarProfesor("p211", "Jaime", "Maussan", "Vida Extraterrestre I", "Asignatura", 911, 20);
 		bib.agregarProfesor("p984", "Pedro", "Arrupe", "Jesuitas II", "Asignatura", 111, 15);
 		
-		
-		
-		
-		bib.estudiantes[0].Prestamo("Pedro Paramo");
-		bib.profesores[1].Prestamo("Familia Burron no.64");
-		
 		System.out.println("Bienvenido a "+bib.getNombre());
 		
 		bib.imprimirUsuarios();

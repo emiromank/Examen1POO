@@ -37,19 +37,31 @@ public class Biblioteca {
 	}
 	
 	public void imprimirUsuarios() {
-		int i=0, j=0;
+		int i=0;
 		
+		System.out.println("\n\tDatos alumnos");
 		for(i=0;i<this.numEs;i++) {
 			System.out.println("Alumno #"+estudiantes[i].getId()+
 								"\nNombre: "+estudiantes[i].getNombre()+
+								"\nApellido"+estudiantes[i].getApellido()+
 								"\nCarrera: "+estudiantes[i].getCarrera()+
 								"\nPlan: "+estudiantes[i].getPlan()+
-								"\nSemestre: "+estudiantes[i].getSemestre()
+								"\nSemestre: "+estudiantes[i].getSemestre()+
+								"\nCorreo: "+estudiantes[i].getCorreo()+"\n"
 					);
 		}
 			
-		for(j=0;j<this.numProf;j++) {
-			System.out.println("Profesor # "+profesores[j].getId());
+
+		System.out.println("\n\tDatos profesores");
+		for(i=0;i<this.numProf;i++) {
+			System.out.println("Profesor # "+profesores[i].getId()+
+					"\nNombre: "+profesores[i].getNombre()+
+					"\nApellido: "+profesores[i].getApellido()+
+					"\nMateria impartida "+ profesores[i].getMateriaImpartida()+
+					"\nHoras por semana "+profesores[i].getHorasPorSemana()+
+					"\nTipo profesor "+profesores[i].getTipoProfesor()+
+					"\nExtension telefonica: "+profesores[i].getExtension()+"\n"
+					);
 			}
 		}
 	}
